@@ -45,19 +45,19 @@ const CTA = () => {
               Commencer l'Essai Gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
+            <Button variant="outline" size="lg" className="border-2 border-white text-blue-600 hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
               Planifier une Démo
             </Button>
           </div>
 
-          {/* Urgency */}
+          {/* Urgency 
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
             <p className="text-lg font-semibold text-yellow-300 mb-2">Offre Limitée</p>
             <p className="text-blue-100">
               Obtenez 3 mois gratuits en souscrivant à un plan annuel avant la fin du mois.
               Aucun engagement, annulation à tout moment.
             </p>
-          </div>
+          </div>*/}
         </div>
       </div>
     </section>
