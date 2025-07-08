@@ -13,8 +13,8 @@ const Footer = () => {
               <span className="text-xl font-bold">TrainingPro</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Streamline your HR training management with our comprehensive platform. 
-              Schedule, track, and manage all your employee training in one place.
+              Rationalisez votre gestion de formation RH avec notre plateforme complète. 
+              Planifiez, suivez et gérez toute votre formation employé en un seul endroit.
             </p>
             <div className="flex gap-4">
               <div className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors cursor-pointer">
@@ -31,25 +31,25 @@ const Footer = () => {
 
           {/* Product */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Product</h3>
+            <h3 className="text-lg font-semibold mb-4">Produit</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Features</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Integrations</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Fonctionnalités</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Tarifs</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Intégrations</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">API</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Security</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sécurité</a></li>
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4">Entreprise</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">À Propos</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Carrières</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Press</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Partners</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Presse</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Partenaires</a></li>
             </ul>
           </div>
 
@@ -59,15 +59,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-400">hello@trainingpro.com</span>
+                <span className="text-gray-400">bonjour@trainingpro.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+33 1 23 45 67 89</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-400">San Francisco, CA</span>
+                <span className="text-gray-400">Paris, France</span>
               </div>
             </div>
           </div>
@@ -76,12 +76,12 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 TrainingPro. All rights reserved.
+            © 2024 TrainingPro. Tous droits réservés.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Politique de Confidentialité</a>
+            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Conditions d'Utilisation</a>
+            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Politique des Cookies</a>
           </div>
         </div>
       </div>

@@ -6,43 +6,43 @@ const Features = () => {
   const features = [
     {
       icon: Calendar,
-      title: "Smart Training Scheduling",
-      description: "Effortlessly schedule training sessions with intelligent conflict detection and automatic notifications.",
+      title: "Planification Intelligente",
+      description: "Planifiez facilement les sessions de formation avec détection automatique des conflits et notifications automatiques.",
       color: "text-blue-600",
       bgColor: "bg-blue-50"
     },
     {
       icon: BarChart3,
-      title: "Real-time Analytics",
-      description: "Track training completion rates, engagement metrics, and ROI with comprehensive dashboards.",
+      title: "Analytics Temps Réel",
+      description: "Suivez les taux de completion, les métriques d'engagement et le ROI avec des tableaux de bord complets.",
       color: "text-green-600",
       bgColor: "bg-green-50"
     },
     {
       icon: FileSignature,
-      title: "Automatic Signatures",
-      description: "Streamline compliance with digital signatures that are automatically captured and stored securely.",
+      title: "Signatures Automatiques",
+      description: "Simplifiez la conformité avec des signatures numériques automatiquement capturées et stockées en sécurité.",
       color: "text-purple-600",
       bgColor: "bg-purple-50"
     },
     {
       icon: Users,
-      title: "Employee Management",
-      description: "Manage training requirements, certifications, and progress for all employees in one central location.",
+      title: "Gestion des Employés",
+      description: "Gérez les exigences de formation, certifications et progrès de tous les employés en un lieu central.",
       color: "text-orange-600",
       bgColor: "bg-orange-50"
     },
     {
       icon: Clock,
-      title: "Time Tracking",
-      description: "Automatically track training hours and generate reports for compliance and payroll purposes.",
+      title: "Suivi du Temps",
+      description: "Suivez automatiquement les heures de formation et générez des rapports pour la conformité et la paie.",
       color: "text-teal-600",
       bgColor: "bg-teal-50"
     },
     {
       icon: Shield,
-      title: "Compliance Management",
-      description: "Ensure regulatory compliance with automated reminders and certification tracking.",
+      title: "Gestion de Conformité",
+      description: "Assurez la conformité réglementaire avec des rappels automatiques et le suivi des certifications.",
       color: "text-red-600",
       bgColor: "bg-red-50"
     }
@@ -53,12 +53,12 @@ const Features = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Everything You Need to
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> Manage Training</span>
+            Tout ce dont vous avez besoin pour
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> Gérer la Formation</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our comprehensive platform eliminates the complexity of training management, 
-            giving HR teams the tools they need to succeed.
+            Notre plateforme complète élimine la complexité de la gestion de formation, 
+            donnant aux équipes RH les outils nécessaires pour réussir.
           </p>
         </div>
 
@@ -82,16 +82,16 @@ const Features = () => {
         {/* Additional benefits */}
         <div className="mt-20 bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-8 md:p-12">
           <div className="text-center mb-10">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Platform?</h3>
-            <p className="text-lg text-gray-600">Join thousands of HR professionals who have transformed their training management</p>
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Pourquoi Choisir Notre Plateforme ?</h3>
+            <p className="text-lg text-gray-600">Rejoignez des milliers de professionnels RH qui ont transformé leur gestion de formation</p>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Zap, text: "50% Faster Setup" },
-              { icon: CheckCircle, text: "99.9% Uptime" },
-              { icon: Shield, text: "Enterprise Security" },
-              { icon: Users, text: "24/7 Support" }
+              { icon: Zap, text: "Installation 50% Plus Rapide" },
+              { icon: CheckCircle, text: "99,9% de Disponibilité" },
+              { icon: Shield, text: "Sécurité Entreprise" },
+              { icon: Users, text: "Support 24/7" }
             ].map((benefit, index) => {
               const IconComponent = benefit.icon;
               return (

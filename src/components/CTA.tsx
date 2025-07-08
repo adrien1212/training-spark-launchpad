@@ -4,10 +4,10 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 const CTA = () => {
   const benefits = [
-    "14-day free trial",
-    "No credit card required",
-    "Setup in under 24 hours",
-    "Cancel anytime"
+    "Essai gratuit 14 jours",
+    "Aucune carte de crédit requise",
+    "Installation en moins de 24h",
+    "Annulation à tout moment"
   ];
 
   return (
@@ -18,15 +18,15 @@ const CTA = () => {
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Ready to Transform Your
+            Prêt à Transformer votre
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300">
-              Training Management?
+              Gestion de Formation ?
             </span>
           </h2>
           
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-            Join thousands of HR professionals who have streamlined their training processes 
-            and achieved remarkable results with our platform.
+            Rejoignez des milliers de professionnels RH qui ont rationalisé leurs processus de formation 
+            et obtenu des résultats remarquables avec notre plateforme.
           </p>
 
           {/* Benefits list */}
@@ -42,20 +42,20 @@ const CTA = () => {
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-              Start Your Free Trial
+              Commencer l'Essai Gratuit
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
             <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg font-semibold rounded-lg transition-all duration-300">
-              Schedule a Demo
+              Planifier une Démo
             </Button>
           </div>
 
           {/* Urgency */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
-            <p className="text-lg font-semibold text-yellow-300 mb-2">Limited Time Offer</p>
+            <p className="text-lg font-semibold text-yellow-300 mb-2">Offre Limitée</p>
             <p className="text-blue-100">
-              Get 3 months free when you sign up for an annual plan before the end of this month. 
-              No commitment, cancel anytime.
+              Obtenez 3 mois gratuits en souscrivant à un plan annuel avant la fin du mois. 
+              Aucun engagement, annulation à tout moment.
             </p>
           </div>
         </div>

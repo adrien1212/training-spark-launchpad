@@ -5,28 +5,28 @@ import { Card, CardContent } from "@/components/ui/card";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "HR Director",
+      name: "Marie Dubois",
+      role: "Directrice RH",
       company: "TechCorp Solutions",
-      content: "This platform transformed our training management completely. We went from spending 10 hours a week on scheduling to just 1 hour. The automatic signatures feature alone saved us countless hours of paperwork.",
+      content: "Cette plateforme a complètement transformé notre gestion de formation. Nous sommes passés de 10 heures par semaine sur la planification à seulement 1 heure. La fonction signatures automatiques seule nous a fait économiser d'innombrables heures de paperasse.",
       rating: 5,
-      avatar: "SJ"
+      avatar: "MD"
     },
     {
-      name: "Michael Chen",
+      name: "Pierre Martin",
       role: "Chief People Officer",
       company: "Innovation Labs",
-      content: "The analytics dashboard gives us insights we never had before. We can now track training effectiveness and make data-driven decisions about our learning programs. Absolutely game-changing.",
+      content: "Le tableau de bord analytique nous donne des insights que nous n'avions jamais eus auparavant. Nous pouvons maintenant suivre l'efficacité de formation et prendre des décisions basées sur les données pour nos programmes d'apprentissage. Absolument révolutionnaire.",
       rating: 5,
-      avatar: "MC"
+      avatar: "PM"
     },
     {
-      name: "Emily Rodriguez",
-      role: "Training Manager",
-      company: "Global Manufacturing",
-      content: "Compliance used to be our biggest headache. Now with automated tracking and digital signatures, we're always audit-ready. The peace of mind this gives us is invaluable.",
+      name: "Sophie Bernard",
+      role: "Responsable Formation",
+      company: "Manufacturing Global",
+      content: "La conformité était notre plus gros casse-tête. Maintenant avec le suivi automatisé et les signatures numériques, nous sommes toujours prêts pour les audits. La tranquillité d'esprit que cela nous apporte est inestimable.",
       rating: 5,
-      avatar: "ER"
+      avatar: "SB"
     }
   ];
 
@@ -35,12 +35,12 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Loved by
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> HR Professionals</span>
+            Adoré par les
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> Professionnels RH</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what HR leaders are saying about 
-            their experience with our training management platform.
+            Ne nous croyez pas sur parole. Voici ce que disent les leaders RH de 
+            leur expérience avec notre plateforme de gestion de formation.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ const Testimonials = () => {
 
         {/* Trust badges */}
         <div className="mt-16 text-center">
-          <p className="text-gray-500 mb-8">Trusted by companies of all sizes</p>
+          <p className="text-gray-500 mb-8">Approuvé par des entreprises de toutes tailles</p>
           <div className="flex justify-center items-center gap-12 opacity-50">
             {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="w-24 h-12 bg-gray-300 rounded-lg"></div>
