@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 const CTA = () => {
   const benefits = [
-    "Essai gratuit 14 jours",
+    "Essai gratuit 31 jours",
     "Aucune carte de crédit requise",
     "Installation en moins de 24h",
     "Annulation à tout moment"
@@ -14,7 +14,7 @@ const CTA = () => {
     <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-800 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-white/10 [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]"></div>
-      
+
       <div className="container mx-auto px-4 relative">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
@@ -23,9 +23,9 @@ const CTA = () => {
               Gestion de Formation ?
             </span>
           </h2>
-          
+
           <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
-            Rejoignez des milliers de professionnels RH qui ont rationalisé leurs processus de formation 
+            Rejoignez des milliers de professionnels RH qui ont rationalisé leurs processus de formation
             et obtenu des résultats remarquables avec notre plateforme.
           </p>
 
@@ -54,7 +54,7 @@ const CTA = () => {
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 max-w-2xl mx-auto">
             <p className="text-lg font-semibold text-yellow-300 mb-2">Offre Limitée</p>
             <p className="text-blue-100">
-              Obtenez 3 mois gratuits en souscrivant à un plan annuel avant la fin du mois. 
+              Obtenez 3 mois gratuits en souscrivant à un plan annuel avant la fin du mois.
               Aucun engagement, annulation à tout moment.
             </p>
           </div>

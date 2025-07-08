@@ -39,18 +39,26 @@ const Testimonials = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> Professionnels RH</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ne nous croyez pas sur parole. Voici ce que disent les leaders RH de 
+            Ne nous croyez pas sur parole. Voici ce que disent les leaders RH de
             leur expérience avec notre plateforme de gestion de formation.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-white border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
-              <CardContent className="p-8">
+            <Card
+              key={index}
+              className="
+                  bg-white border-0 shadow-xl 
+                  hover:shadow-2xl transition-all duration-300 
+                  hover:-translate-y-2 
+                  flex flex-col h-full              /* 1. full-height flex */
+                "
+            >
+              <CardContent className="p-8 flex flex-col flex-grow">  {/* 2. allow grow */}
                 {/* Quote icon */}
                 <Quote className="w-8 h-8 text-blue-600 mb-4" />
-                
+
                 {/* Rating */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -63,8 +71,8 @@ const Testimonials = () => {
                   "{testimonial.content}"
                 </p>
 
-                {/* Author */}
-                <div className="flex items-center gap-4">
+                {/* 3. author at bottom */}
+                <div className="flex items-center gap-4 mt-auto">
                   <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
                     {testimonial.avatar}
                   </div>
@@ -78,6 +86,7 @@ const Testimonials = () => {
             </Card>
           ))}
         </div>
+
 
         {/* Trust badges */}
         <div className="mt-16 text-center">

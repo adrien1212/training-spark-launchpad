@@ -1,13 +1,13 @@
 
-import { TrendingUp, Users, Clock, Award } from "lucide-react";
+import { TrendingUp, Users, Clock, Award, CalendarCheck } from "lucide-react";
 
 const Statistics = () => {
   const stats = [
     {
       icon: Users,
-      number: "50 000+",
+      number: "4 300+",
       label: "Employés Formés",
-      description: "Dans plus de 500 entreprises mondiales"
+      description: "Dans plus de 270 entreprises mondiales"
     },
     {
       icon: Clock,
@@ -17,15 +17,15 @@ const Statistics = () => {
     },
     {
       icon: TrendingUp,
-      number: "95%",
-      label: "Taux de Completion",
-      description: "Taux moyen de completion des formations"
+      number: "96%",
+      label: "Taux de satisfaction",
+      description: "Pour les gestionnaires et les employés formés"
     },
     {
-      icon: Award,
-      number: "99%",
-      label: "Conformité",
-      description: "Conformité réglementaire atteinte"
+      icon: CalendarCheck,
+      number: "23 000+",
+      label: "Sessions réalisées",
+      description: "Sessions planifiées tenues en présentiel"
     }
   ];
 
@@ -33,7 +33,7 @@ const Statistics = () => {
     <section className="py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white relative overflow-hidden">
       {/* Background pattern */}
       <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,transparent,black,transparent)]"></div>
-      
+
       <div className="container mx-auto px-4 relative">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -41,7 +41,7 @@ const Statistics = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400"> Parlent d'Eux-Mêmes</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Notre plateforme a aidé des organisations du monde entier à rationaliser leurs processus 
+            Notre plateforme a aidé des de nombreuses organisations à rationaliser leurs processus
             de formation et à obtenir des résultats remarquables.
           </p>
         </div>

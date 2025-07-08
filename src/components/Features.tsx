@@ -57,7 +57,7 @@ const Features = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> Gérer la Formation</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Notre plateforme complète élimine la complexité de la gestion de formation, 
+            Notre plateforme complète élimine la complexité de la gestion de formation,
             donnant aux équipes RH les outils nécessaires pour réussir.
           </p>
         </div>
@@ -85,12 +85,11 @@ const Features = () => {
             <h3 className="text-3xl font-bold text-gray-900 mb-4">Pourquoi Choisir Notre Plateforme ?</h3>
             <p className="text-lg text-gray-600">Rejoignez des milliers de professionnels RH qui ont transformé leur gestion de formation</p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { icon: Zap, text: "Installation 50% Plus Rapide" },
               { icon: CheckCircle, text: "99,9% de Disponibilité" },
-              { icon: Shield, text: "Sécurité Entreprise" },
+              { icon: Shield, text: "Sécurité Entreprise, hébergé en France" },
               { icon: Users, text: "Support 24/7" }
             ].map((benefit, index) => {
               const IconComponent = benefit.icon;

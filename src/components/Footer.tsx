@@ -5,15 +5,15 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Company info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Calendar className="w-8 h-8 text-blue-400" />
-              <span className="text-xl font-bold">TrainingPro</span>
+              <span className="text-xl font-bold">devlupp</span>
             </div>
             <p className="text-gray-400 mb-6">
-              Rationalisez votre gestion de formation RH avec notre plateforme complète. 
+              Rationalisez votre gestion de formation RH avec notre plateforme complète.
               Planifiez, suivez et gérez toute votre formation employé en un seul endroit.
             </p>
             <div className="flex gap-4">
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Company */}
+          {/* Company 
           <div>
             <h3 className="text-lg font-semibold mb-4">Entreprise</h3>
             <ul className="space-y-2">
@@ -51,7 +51,7 @@ const Footer = () => {
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Presse</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Partenaires</a></li>
             </ul>
-          </div>
+          </div>*/}
 
           {/* Contact */}
           <div>
@@ -59,15 +59,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-400">bonjour@trainingpro.com</span>
+                <span className="text-gray-400">contact@dvelupp.fr</span>
               </div>
+              {/* Contact 
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400" />
                 <span className="text-gray-400">+33 1 23 45 67 89</span>
               </div>
+              */}
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-400">Paris, France</span>
+                <span className="text-gray-400">Toulouse, France</span>
               </div>
             </div>
           </div>
@@ -76,7 +78,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 TrainingPro. Tous droits réservés.
+            © 2024 devlupp. Tous droits réservés.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Politique de Confidentialité</a>

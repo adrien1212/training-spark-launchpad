@@ -12,12 +12,11 @@ const Pricing = () => {
       description: "Parfait pour découvrir notre plateforme",
       features: [
         "Jusqu'à 10 employés",
-        "3 formations par mois",
         "Rapports de base",
+        "Signature automatiques",
         "Support par email",
-        "Stockage 1GB"
       ],
-      buttonText: "Commencer Gratuitement",
+      buttonText: "Commencer",
       popular: false
     },
     {
@@ -27,11 +26,8 @@ const Pricing = () => {
       description: "Idéal pour les petites et moyennes entreprises",
       features: [
         "Jusqu'à 100 employés",
-        "Formations illimitées",
         "Analytics avancés",
-        "Signatures automatiques",
         "Support prioritaire",
-        "Stockage 10GB",
         "Intégrations API"
       ],
       buttonText: "Essayer Business",
@@ -44,12 +40,9 @@ const Pricing = () => {
       description: "Pour les grandes organisations",
       features: [
         "Employés illimités",
-        "Formations illimitées",
         "Analytics personnalisés",
         "Signatures automatiques",
         "Support dédié 24/7",
-        "Stockage illimité",
-        "API complète",
         "Formation personnalisée",
         "SSO et sécurité avancée"
       ],
@@ -66,7 +59,6 @@ const Pricing = () => {
         "Développement sur mesure",
         "Migration de données",
         "Formation dédiée",
-        "Support premium",
         "SLA garantie",
         "Conformité spécifique"
       ],
@@ -84,14 +76,24 @@ const Pricing = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600"> Vous Convient</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Des tarifs transparents et flexibles pour accompagner votre croissance. 
+            Des tarifs transparents et flexibles pour accompagner votre croissance.
             Commencez gratuitement et évoluez selon vos besoins.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
-            <Card key={index} className={`relative ${plan.popular ? 'border-2 border-blue-500 shadow-xl scale-105' : 'border border-gray-200'} hover:shadow-lg transition-all duration-300`}>
+            <Card
+              key={index}
+              className={`
+                relative 
+                flex flex-col h-full     /* 1. full-height flex container */
+                ${plan.popular
+                  ? 'border-2 border-blue-500 shadow-xl scale-105'
+                  : 'border border-gray-200'} 
+                hover:shadow-lg transition-all duration-300
+              `}
+            >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                   <div className="bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
@@ -99,41 +101,57 @@ const Pricing = () => {
                   </div>
                 </div>
               )}
-              
+
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-xl font-bold text-gray-900">{plan.name}</CardTitle>
                 <div className="flex items-baseline justify-center mb-2">
                   <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
                   <span className="text-gray-600 ml-1">{plan.period}</span>
                 </div>
-                <CardDescription className="text-gray-600">{plan.description}</CardDescription>
+                <CardDescription className="text-gray-600">
+                  {plan.description}
+                </CardDescription>
               </CardHeader>
 
-              <CardContent className="pt-0">
+              {/* 2. let content grow */}
+              <CardContent className="pt-0 flex flex-col flex-grow">
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start gap-3">
+                    <li
+                      key={featureIndex}
+                      className="flex items-start gap-3"
+                    >
                       <Check className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" />
                       <span className="text-gray-700 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                <Button 
-                  className={`w-full ${plan.popular ? 'bg-blue-600 hover:bg-blue-700' : 'bg-gray-900 hover:bg-gray-800'} text-white font-semibold py-3 rounded-lg transition-colors duration-300`}
-                >
-                  {plan.buttonText}
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                {/* 3. push button to bottom */}
+                <div className="mt-auto">
+                  <Button
+                    className={`
+                      w-full 
+                      ${plan.popular
+                        ? 'bg-blue-600 hover:bg-blue-700'
+                        : 'bg-gray-900 hover:bg-gray-800'} 
+                      text-white font-semibold py-3 rounded-lg transition-colors duration-300
+                    `}
+                  >
+                    {plan.buttonText}
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
+
         {/* Additional info */}
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
-            Tous les plans incluent un essai gratuit de 14 jours • Aucune carte de crédit requise
+            Tous les plans incluent un essai gratuit de 31 jours • Aucune carte de crédit requise
           </p>
           <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-500">
             <span>✓ Support client inclus</span>
