@@ -10,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Calendar className="w-8 h-8 text-blue-400" />
-              <span className="text-xl font-bold">traino</span>
+              <span className="text-xl font-bold">training-spark-launchpad</span>
             </div>
             <p className="text-gray-400 mb-6">
               Rationalisez votre gestion de formation RH avec notre plateforme complète.
@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400" />
-                <span className="text-gray-400">contact@traino.fr</span>
+                <span className="text-gray-400">contact@training-spark-launchpad.fr</span>
               </div>
               {/* Contact 
               <div className="flex items-center gap-3">
@@ -78,7 +78,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 traino. Tous droits réservés.
+            © 2024 training-spark-launchpad. Tous droits réservés.
           </p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Politique de Confidentialité</a>
