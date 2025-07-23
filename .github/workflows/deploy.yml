@@ -48,6 +48,7 @@ jobs:
           path: './dist'
       - name: Debug dist contents
         run: ls -R dist
+      # https://help.ovhcloud.com/csm/en-vps-deploy-website-github-actions?id=kb_article_view&sysparm_article=KB0066184
       - name: Copy files to VPS
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
