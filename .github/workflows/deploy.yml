@@ -48,6 +48,12 @@ jobs:
           path: './dist'
       - name: Debug dist contents
         run: ls -R dist
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Copy files to VPS
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 51.254.103.78 >> ~/.ssh/known_hosts
+          rsync -avz --delete ./ debian@51.254.103.78:/var/www/landingpage/
